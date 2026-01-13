@@ -9,7 +9,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * special instance of this Class (a "bean") and executes the configuration methods
  * you create in this class. This logic could be put into main() but this approach,
  * with this annotation, allows Sping to handle the lifecycle of this Class. This
- * is also the common convention that other developers expect to see. **/
+ * is also the common convention that other developers expect to see.
+ *
+ * We use annotations to tell the Spring Boot framework what to do.
+ * @RestController // "I handle HTTP requests"
+ * @Service // "I contain business logic"
+ * @Repository // "I access the database"
+ * @Configuration // "I configure the app"
+ * @Autowired // "Inject this dependency"
+ * You focus on WHAT to do while Spring Boot handles HOW to do it.
+ * **/
 @Configuration
 /** "WebMvcConfigurer" is a Spring interface that works as a menu of customization
  * options (pre-build methods). In this case, we're using "CORS settings" (see
