@@ -1,6 +1,6 @@
-# Task Manager API
+# Task Manager Learning Project
 
-A RESTful API for task management built with Spring Boot, following Test-Driven Development (TDD) practices.
+This 2 applications in one (frontend and backend) project represents an effort to regain some rusty skills that haven't been exercised since I attended my bootcamp, SkillDistillery, in 2022 as well as gain new skills. 
 
 ## Tech Stack
 
