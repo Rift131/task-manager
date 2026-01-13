@@ -1,6 +1,6 @@
 # Task Manager Learning Project
 
-This 2 applications in one (frontend and backend) project represents an effort to regain some rusty skills that haven't been exercised since I attended my bootcamp, SkillDistillery, in 2022 as well as gain new skills. 
+This 2 applications in one repository (frontend and backend) represents my effort to regain some rusty skills that haven't been exercised since I attended my bootcamp, SkillDistillery, in 2022 as well as gain new skills. 
 
 ## Tech Stack
 
@@ -73,7 +73,7 @@ task-manager/
    ./mvnw spring-boot:run
    ```
 
-4. **Access the API**
+4. **Access the Backend API**
    ```
    http://localhost:8080
    ```
