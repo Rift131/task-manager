@@ -1,5 +1,6 @@
-package com.kendev131.task_manager;
+package com.kendev131.task_manager.controller;
 
+import com.kendev131.task_manager.model.SoftwareEngineer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
