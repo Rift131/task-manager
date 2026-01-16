@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 //@Entity
 //@Table(name = "tasks");
 public class Task {
+    /*Column annotations are setting up how the database will treat each of these properties*/
     @Column(nullable = false) // In the database, this field is not allowed to be null
     private String title;
     @Column(columnDefinition = "TEXT") // JPA Annotation telling the database to use type TEXT which allows unlimited length
