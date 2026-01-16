@@ -1,7 +1,11 @@
 package com.kendev131.task_manager.model;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.scheduling.config.Task;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+
 
 class TaskTest {
 
