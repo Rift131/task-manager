@@ -1,5 +1,6 @@
-package com.kendev131.task_manager;
+package com.kendev131.task_manager.controller;
 
+import com.kendev131.task_manager.model.SoftwareEngineer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/software-engineers") // Base path to this controller for the frontend to use
+@RequestMapping("api/v1/software-engineers") // Add this to the URL of localhost to view results
 public class SoftwareEngineerController {
     @GetMapping
     public List<SoftwareEngineer> getEngineers() {

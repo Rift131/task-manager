@@ -1,4 +1,4 @@
-package com.kendev131.task_manager;
+package com.kendev131.task_manager.model;
 
 import java.util.Objects;
 
