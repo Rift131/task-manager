@@ -7,11 +7,12 @@ import java.time.LocalDateTime;
 //@Entity
 //@Table(name = "tasks");
 public class Task {
-
+    @Column(nullable = false) // In the database, this field is not allowed to be null
     private String title;
+    @Column(columnDefinition = "TEXT") // JPA Annotation telling the database to use type TEXT which allows unlimited length
     private String description;
     private boolean completed;
-    @Column(name = "due_date")
+    @Column(name = "due_date") // JPA annotation that tells the database how to store this field (table column name will be "due_date")
     private LocalDateTime dueDate;
 
 
