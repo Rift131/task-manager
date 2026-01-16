@@ -7,9 +7,6 @@ import java.time.LocalDateTime;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-
-
-
 class TaskTest {
 
     @Test
@@ -36,6 +33,6 @@ class TaskTest {
         task.setDueDate(dueDate);
 
         // Assert
-        assertEquals(dueDate, task.getDueDate);
+        assertEquals(dueDate, task.getDueDate());
     }
 }
