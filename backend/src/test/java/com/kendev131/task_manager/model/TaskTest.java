@@ -1,7 +1,11 @@
 package com.kendev131.task_manager.model;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import java.time.LocalDateTime;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
 
@@ -20,5 +24,18 @@ class TaskTest {
         assertEquals("Buy groceries", task.getTitle());
         assertEquals("Milk, eggs, bread", task.getDescription());
         assertFalse(task.isCompleted());
+    }
+
+    @Test
+    void testShouldHaveDueDate() {
+        // Arrange
+        Task task = new Task();
+        LocalDateTime dueDate = LocalDateTime.of(2026, 1, 20, 14, 30);
+
+        // Act
+        task.setDueDate(dueDate);
+
+        // Assert
+        assertEquals(dueDate, task.getDueDate);
     }
 }
