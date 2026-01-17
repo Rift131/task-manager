@@ -15,6 +15,8 @@ public class Task {
     private boolean completed;
     @Column(name = "due_date") // JPA annotation that tells the database how to store this field (table column name will be "due_date")
     private LocalDateTime dueDate;
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
 
 
     // Getters & Setters
@@ -51,5 +53,11 @@ public class Task {
         this.dueDate = dueDate;
     }
 
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
 
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
 }
