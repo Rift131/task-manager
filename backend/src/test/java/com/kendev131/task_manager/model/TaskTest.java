@@ -35,4 +35,17 @@ class TaskTest {
         // Assert
         assertEquals(dueDate, task.getDueDate());
     }
+
+    @Test
+    void testShouldHaveCreatedAtDate() {
+        // Arrange
+        Task task = new Task();
+        LocalDateTime createdAt = LocalDateTime.of(2026, 1, 21, 15, 45);
+
+        // Act
+        task.setCreatedAt(createdAt);
+
+        // Assert
+        assertEquals(createdAt, task.getCreatedAt());
+    }
 }
