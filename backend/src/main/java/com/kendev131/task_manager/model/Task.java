@@ -68,6 +68,12 @@ public class Task {
     }
 
     /* EQUALS & HASH CODE */
+
+    /* Custom "Equals and Hash Code" methods solve the problem of Java comparing objects in memory
+    * instead of content. These methods define what makes two objects equal. These two methods are
+    * needed when you use entities in HashSet or HashMap, compare entities for equality, using
+    * JPA/Hibernate collections and testing for duplicates,
+    * */
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -75,6 +81,9 @@ public class Task {
         return completed == task.completed && Objects.equals(title, task.title) && Objects.equals(description, task.description) && Objects.equals(dueDate, task.dueDate) && Objects.equals(createdAt, task.createdAt);
     }
 
+    /* Java has a critical rule: If two objects are equal (according to equals()), they MUST have
+    * the same hashCode(). Hash-based collections like "HashSet" adn "HashMap" rely on this rule.
+    * */
     @Override
     public int hashCode() {
         return Objects.hash(title, description, completed, dueDate, createdAt);
